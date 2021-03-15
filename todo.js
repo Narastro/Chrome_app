@@ -1,7 +1,6 @@
 const toDoForm = document.querySelector(".js-toDoForm"),
   toDoInput = toDoForm.querySelector("input"),
   toDoList = document.querySelector(".js-toDoList");
-
 const TODOS_LS = "toDos";
 
 let toDos = [],
@@ -73,6 +72,7 @@ function handleSubmit(event) {
   paintToDo(currentValue);
   //다시 입력하기 좋게 적힌 값을 지움
   toDoInput.value = "";
+
 }
 
 //toDos 객체에 저장된 값을 불러오는 함수
