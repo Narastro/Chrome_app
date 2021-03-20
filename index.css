@@ -1,5 +1,13 @@
 body{
     color:white;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .form,
@@ -26,4 +34,48 @@ body{
     height: 100%;
     z-index: -1;
     animation: fadeIn 0.5s linear;
+}
+
+.js-title{
+    font-size: 120px;
+    text-shadow:1px 1px 2px palevioletred;
+
+}
+.showing{
+    font-size: 40px;
+    text-shadow:1px 1px 2px pink;
+}
+input::placeholder{
+    outline: none;
+    padding-left: 5px;
+    font-size: 15px;
+}
+input:focus{
+    outline: none;
+}
+
+
+input{
+    border-radius: 5px;
+    height: 20px;
+    border: rebeccapurple;
+}
+.js-weather{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+button{
+    background-color: white;
+    border-radius: 10px;
+    color:white;
+    border: none;
+}
+button:hover{
+    background-color: pink;
+}
+button:active{
+    background-color: red;
+    border:none;
+    outline: none;
 }
