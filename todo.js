@@ -44,10 +44,11 @@ function paintToDo(text) {
   //버튼 클릭시 deleteToDo 함수를 실행시킴
   delBtn.addEventListener("click", deleteToDo);
   //입력된 값을 span에 저장
-  span.innerText = text;
+  span.innerText = text+' ';
   //버튼과 span을 각각 li 밑으로 들어가게 만듬
-  li.appendChild(delBtn);
+  
   li.appendChild(span);
+  li.appendChild(delBtn);
   //li의 id는 newId로 설정
   li.id = newId;
   //toDoList 밑으로 li를 보냄
