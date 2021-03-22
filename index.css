@@ -79,3 +79,6 @@ button:active{
     border:none;
     outline: none;
 }
+span{
+    text-shadow:1px 1px 2px pink;
+}
