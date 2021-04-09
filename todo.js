@@ -19,6 +19,7 @@ function deleteToDo(event) {
       //즉 타겟만 지워지고 나머지 애들이 있는 것을 cleanToDos
     return toDo.id !== parseInt(li.id);
   });
+  //save
   //toDos를 cleanToDos로 교체해줌
   toDos = cleanToDos;
   //저장
